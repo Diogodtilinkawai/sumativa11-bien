@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<!-- <ion-content [fullscreen]="true"> -->
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
@@ -17,11 +17,14 @@
       <ion-title>
         Generador de ideas
       </ion-title>
-      <ion-content>
-        <ion-item>
+      <div>
+        <!-- <ion-item> -->
+          <ion-title>
+            Generador de ideas
+          </ion-title>
           <ion-label position="floating">Nombre de la idea</ion-label>
-          <ion-input [(ngModel)]="ideaPrompt" placeholder="tilin grrrr"></ion-input>
-        </ion-item>
+          <ion-input [(ngModel)]="ideaPrompt" placeholder="pon idea"></ion-input>
+        <!-- </ion-item> -->
         <ion-button expand="full" (click)="generateIdea()">Generar idea</ion-button>
         <ion-card *ngIf="generateIdea">
           <ion-card-header>
@@ -31,6 +34,7 @@
             {{generatedIdea}}
           </ion-card-content>
         </ion-card>
-      </ion-content>
+      </div>
+      </div>
 
 

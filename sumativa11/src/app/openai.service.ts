@@ -10,7 +10,7 @@ export class OpenaiService {
 
   constructor() { }
   async generateIdea(prompt:string): Promise<string>{
-    const url = 'https://api.openai.com/v1/engines/davinci/completions';
+    const url = 'https://api.openai.com/v1/chat/completions';
     try {
       const response = await axios.post(url, {
         model : 'gpt-3.5-turbo',
